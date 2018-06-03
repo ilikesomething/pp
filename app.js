@@ -24,7 +24,7 @@ io.sockets.on('connection', function (socket, username) {
     });
 });
 
-server.listen(20017);
+server.listen(process.env.PORT || 3000);
 
 setInterval(function() {
     console.log('ping');
